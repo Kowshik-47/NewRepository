@@ -4,7 +4,7 @@
 			"id": "20260330172742187341",
 			"customer_id": "SB62863628",
 			"balance": 0,
-			"customer_name": "Gill",
+			"customer_name": "Gill"
 		},
 		{
 			"id": "20260330180122485814",
@@ -16,7 +16,7 @@
 			"id": "20260331100715264837",
 			"customer_id": 2876861913,
 			"balance": 1000,
-			"customer_name": "Bill Gates",
+			"customer_name": "Bill Gates"
 		}
 	],
 	"customers": {},
