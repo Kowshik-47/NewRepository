@@ -1,30 +1,59 @@
 {
-	"accounts": [
-		{
-			"id": "20260330172742187341",
-			"customer_id": "SB62863628",
-			"balance": 0,
-			"customer_name": "Gill"
-		},
-		{
-			"id": "20260330180122485814",
-			"customer_id": "SB679468790",
-			"balance": 4000,
-			"customer_name": "Michael"
-		},
-		{
-			"id": "20260331100715264837",
-			"customer_id": 2876861913,
-			"balance": 1000,
-			"customer_name": "Bill Gates"
-		}
-	],
-	"customers": {},
-	"users": {
-		"name": {
-			"password": "123",
-			"role": "Manager",
-			"name": "Will Son"
-		}
-	}
+  "accounts": [
+    {
+      "id": "20260330172742187341",
+      "customer_id": "SB62863628",
+      "customer_name": "Gill",
+      "balance": 5420.50,
+      "currency": "USD",
+      "status": "active",
+      "transactions": [
+        { "txn_id": "TXN-G101", "date": "2026-05-01T09:00:00Z", "amount": 5000.00, "type": "deposit", "category": "Salary", "description": "Monthly Payroll - Tech Corp", "status": "completed" },
+        { "txn_id": "TXN-G102", "date": "2026-05-02T12:30:00Z", "amount": -1200.00, "type": "payment", "category": "Housing", "description": "Rent Payment - City Lofts", "status": "completed" },
+        { "txn_id": "TXN-G103", "date": "2026-05-03T18:15:00Z", "amount": -45.50, "type": "payment", "category": "Dining", "description": "Joe's Burger Shack", "status": "completed" },
+        { "txn_id": "TXN-G104", "date": "2026-05-05T10:00:00Z", "amount": -250.00, "type": "withdrawal", "category": "Cash", "description": "ATM Withdrawal - Main St", "status": "completed" },
+        { "txn_id": "TXN-G105", "date": "2026-05-08T14:00:00Z", "amount": 316.00, "type": "deposit", "category": "Tax", "description": "IRS Tax Refund", "status": "completed" }
+      ]
+    },
+    {
+      "id": "20260330180122485814",
+      "customer_id": "SB679468790",
+      "customer_name": "Michael",
+      "balance": 3125.40,
+      "currency": "USD",
+      "status": "active",
+      "transactions": [
+        { "txn_id": "TXN-M201", "date": "2026-04-28T11:20:00Z", "amount": 4000.00, "type": "deposit", "category": "Transfer", "description": "Opening Deposit", "status": "completed" },
+        { "txn_id": "TXN-M202", "date": "2026-05-01T08:45:00Z", "amount": -65.00, "type": "payment", "category": "Utilities", "description": "Water & Sewage Bill", "status": "completed" },
+        { "txn_id": "TXN-M203", "date": "2026-05-02T19:00:00Z", "amount": -12.99, "type": "subscription", "category": "Entertainment", "description": "Netflix.com", "status": "completed" },
+        { "txn_id": "TXN-M204", "date": "2026-05-04T12:00:00Z", "amount": -850.00, "type": "transfer", "category": "Housing", "description": "Transfer to Landlord", "status": "pending" },
+        { "txn_id": "TXN-M205", "date": "2026-05-06T15:30:00Z", "amount": -220.00, "type": "payment", "category": "Shopping", "description": "Amazon.com", "status": "failed" },
+        { "txn_id": "TXN-M206", "date": "2026-05-07T10:10:00Z", "amount": 273.39, "type": "deposit", "category": "Dividend", "description": "Stock Dividend - AAPL", "status": "completed" }
+      ]
+    },
+    {
+      "id": "20260331100715264837",
+      "customer_id": 2876861913,
+      "customer_name": "Bill Gates",
+      "balance": 1500450.00,
+      "currency": "USD",
+      "status": "frozen",
+      "transactions": [
+        { "txn_id": "TXN-B301", "date": "2026-05-01T00:01:00Z", "amount": 1000000.00, "type": "deposit", "category": "Investment", "description": "Foundation Endowment", "status": "completed" },
+        { "txn_id": "TXN-B302", "date": "2026-05-03T14:00:00Z", "amount": 500000.00, "type": "deposit", "category": "Transfer", "description": "Wire from Brokerage", "status": "completed" },
+        { "txn_id": "TXN-B303", "date": "2026-05-05T09:30:00Z", "amount": -150.00, "type": "payment", "category": "Dining", "description": "McDonalds - Drive Thru", "status": "completed" },
+        { "txn_id": "TXN-B304", "date": "2026-05-09T08:00:00Z", "amount": 600.00, "type": "deposit", "category": "Other", "description": "Misc Credit", "status": "completed" }
+      ]
+    }
+  ],
+  "customers": {
+    "SB62863628": { "email": "gill@tech.com", "phone": "+1-202-555-0111", "address": "789 Pine Rd, Seattle", "last_login": "2026-05-09T10:00:00Z" },
+    "SB679468790": { "email": "michael@finance.net", "phone": "+1-202-555-0144", "address": "456 Oak St, Chicago", "last_login": "2026-05-09T14:30:00Z" },
+    "2876861913": { "email": "bill@gates.com", "phone": "+1-202-555-0999", "address": "1 Lake Washington, WA", "last_login": "2026-05-08T23:45:00Z" }
+  },
+  "admin_meta": {
+    "total_vault_balance": 1509000.00,
+    "flagged_accounts": ["2876861913"],
+    "system_maintenance": "2026-05-15T02:00:00Z"
+  }
 }
