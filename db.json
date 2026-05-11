@@ -13,7 +13,51 @@
         { "txn_id": "TXN-G103", "date": "2026-05-03T18:15:00Z", "amount": -45.50, "type": "payment", "category": "Dining", "description": "Joe's Burger Shack", "status": "completed" },
         { "txn_id": "TXN-G104", "date": "2026-05-05T10:00:00Z", "amount": -250.00, "type": "withdrawal", "category": "Cash", "description": "ATM Withdrawal - Main St", "status": "completed" },
         { "txn_id": "TXN-G105", "date": "2026-05-08T14:00:00Z", "amount": 316.00, "type": "deposit", "category": "Tax", "description": "IRS Tax Refund", "status": "completed" }
-      ]
+      ],
+  "cards": [
+    {
+      "id": "crd_8821_9901",
+      "customer_id": "user_001",
+      "holder_name": "Michael Gill",
+      "last_four": "4242",
+      "brand": "visa",
+      "tier": "platinum",
+      "expiry": "09/28",
+      "status": "active",
+      "balance_limit": 10000,
+      "current_spent": 1250.40,
+      "theme": "bg-gradient-to-br from-slate-900 to-slate-700",
+      "is_physical": true
+    },
+    {
+      "id": "crd_5541_2230",
+      "customer_id": "user_001",
+      "holder_name": "Michael Gill",
+      "last_four": "8810",
+      "brand": "mastercard",
+      "tier": "gold",
+      "expiry": "12/26",
+      "status": "frozen",
+      "balance_limit": 5000,
+      "current_spent": 4800.00,
+      "theme": "bg-gradient-to-br from-amber-600 to-yellow-400",
+      "is_physical": false
+    },
+    {
+      "id": "crd_1122_3344",
+      "customer_id": "user_002",
+      "holder_name": "Bill Gates",
+      "last_four": "0001",
+      "brand": "amex",
+      "tier": "centurion",
+      "expiry": "01/30",
+      "status": "active",
+      "balance_limit": 1000000,
+      "current_spent": 50.00,
+      "theme": "bg-gradient-to-br from-black via-gray-900 to-black",
+      "is_physical": true
+    }
+  ]
     },
     {
       "id": "20260330180122485814",
